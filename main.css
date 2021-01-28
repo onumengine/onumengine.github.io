@@ -1,3 +1,108 @@
 body {
     font-size: small;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+section#jobDescription {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("images/peterndukway_20200605_191112_0.jpg");
+    color: white;
+}
+
+article {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section#servicesSection {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+section#formSection {
+    text-align: center;
+}
+
+section#formSection blockquote input#nameInput {
+    width: 33%;
+    height: 30px;
+}
+
+section#formSection blockquote input#emailInput {
+    width: 33%;
+    height: 30px;
+}
+
+section#formSection blockquote input#subjectInput {
+    width: 33%;
+    height: 30px;
+}
+
+section#formSection blockquote input#messageInput {
+    width: 33%;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 20px;
+    background-color: #202020
+}
+
+footer div#tutorials {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #202020;
+    background-color: white;
+    color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+}
+
+footer div#patronize {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #202020;
+    background-color: red;
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+}
+
+footer div#followMe {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #202020;
+    background-color: blue;
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+}
+
+footer div#copyright {
+    color: #aaaaaa;
+}
+
+#jobDescription {
+    font-size: 150%;
 }
