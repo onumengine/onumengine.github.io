@@ -3,56 +3,14 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-    background-color: blueviolet;
-    color: white;
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-section#jobDescription {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-image: url("images/peterndukway_20200605_191112_0.jpg");
-    color: white;
-}
-
 article {
     padding-top: 50px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-section#servicesSection {
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-}
-
-section#formSection {
-    text-align: center;
-}
-
-section#formSection blockquote input#nameInput {
-    width: 33%;
-    height: 30px;
-}
-
-section#formSection blockquote input#emailInput {
-    width: 33%;
-    height: 30px;
-}
-
-section#formSection blockquote input#subjectInput {
-    width: 33%;
-    height: 30px;
-}
-
-section#formSection blockquote input#messageInput {
-    width: 33%;
-    height: 30px;
+article p {
+    white-space: normal;
 }
 
 footer {
@@ -103,6 +61,74 @@ footer div#copyright {
     color: #aaaaaa;
 }
 
-#jobDescription {
+footer div#socialLinks img.socialMediaIcon {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+section#formSection {
+    text-align: center;
+}
+
+section#formSection blockquote input {
+    width: 33%;
+    height: 30px;
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: #aaaaaa;
+}
+
+section#formSection blockquote input#messageInput {
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    height: 300px;
+    text-align: start;
+}
+
+section#formSection blockquote input#sendMessageInput {
+    border-style: none;
+    background-color: red;
+    color: white;
+}
+
+section#jobDescription {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("images/peterndukway_20200605_191112_0.jpg");
+    color: white;
+}
+
+section#servicesSection {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#jobDescription {
     font-size: 150%;
+}
+
+section#jobDescription p.italicized {
+    font-style: italic;
+}
+
+section#servicesSection div.serviceItem {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: red;
+    margin: 8px;
+    padding: 8px;
 }
