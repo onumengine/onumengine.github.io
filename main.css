@@ -3,6 +3,10 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 article {
     padding-top: 50px;
     padding-left: 10px;
@@ -76,6 +80,8 @@ header {
 
 section#formSection {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 section#formSection blockquote input {
@@ -87,8 +93,7 @@ section#formSection blockquote input {
 }
 
 section#formSection blockquote input#messageInput {
-    border-radius: 8px;
-    border-bottom-left-radius: 0px;
+    border-radius: 0px;
     height: 300px;
     text-align: start;
 }
