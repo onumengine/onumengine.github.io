@@ -1,4 +1,85 @@
-
 *, *:before, *:after {
     box-sizing: border-box;
+}
+
+body {
+    font-size: medium;
+    font-family: sans-serif;
+    color: dimgray;
+}
+
+article {
+    padding-top: 100px;
+}
+
+article#myProjectsHeading {
+    margin-bottom: 50px;
+}
+
+.centeredContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#introDiv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.introImage {
+    text-align: center;
+    padding-top: 70px;
+}
+
+div#myProjectsDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.projectImages {
+    padding-left: 100px;
+}
+
+div#skillsList {
+    padding-left: 40px;
+}
+
+footer div#contactDiv {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+    color: dimgray;
+}
+
+footer div#siteCredits {
+    background-color: darkgray;
+    height: 70px;
+    color: antiquewhite;
+}
+
+h1 {
+    font-size: 3.0rem;
+}
+
+nav#tabs {
+    display: inline;
+}
+
+section.paddedSection {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+section.twoItemFlex {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }

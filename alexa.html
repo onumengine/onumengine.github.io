@@ -12,22 +12,24 @@
             <p>Resume</p>
             <p>Hire me</p>
         </nav>
-        <section>
-            <div>
-                <h3>Hey there!</h3>
-                <h1>I'm Pete.</h1>
-                <h3>I build mobile applications</h3>
-                <h3>that are fun to use</h3>
-                <br>
-                <img src="icons/icons8-github-64.png">
-                <img src="icons/icons8-twitter-48.png">
-                <img src="icons/icons8-linkedin-48.png">
+        <section class="twoItemFlex">
+            <div id="myIntroDiv" class="centeredContent">
+                <div>
+                    <h3>Hey there!</h3>
+                    <h1>I'm Pete.</h1>
+                    <h3>I build mobile applications<br>that are fun to use</h3>
+                </div>
+                <div>
+                    <img src="icons/icons8-github-64.png">
+                    <img src="icons/icons8-twitter-48.png">
+                    <img src="icons/icons8-linkedin-48.png">
+                </div>
             </div>
-            <div>
-                <img src="images/doctor.svg">
+            <div class="centeredContent">
+                <img src="images/doctor.svg" height="400px">
             </div>
         </section>
-        <section>
+        <section class="twoItemFlex paddedSection">
             <article>
                 <h2>Skills and Portfolio</h2>
                 <p>
@@ -38,35 +40,76 @@
                 </p>
                 <div>
                     <p>
-                        Mobile applications: Hybrid(Android and iOS) apps with Flutter | Native Android(Java and Kotlin)
+                        <strong>Mobile applications:</strong> Hybrid(Android and iOS) apps with Flutter | Native Android(Java and Kotlin)
                     </p>
                     <p>
-                        Backend: Django | Firebase
+                        <strong>Backend:</strong> Django | Firebase
                     </p>
                     <p>
-                        Collaboration: Git and Github | Gitflow workflow
+                        <strong>Collaboration:</strong> Git and Github | Gitflow workflow
                     </p>
                 </div>
             </article>
-            <img src="images/doctor.svg">
+            <div class="introImage">
+                <img src="images/doctor.svg" height="400px">
+            </div>
         </section>
-        <section>
-            <article>
+        <section class="paddedSection">
+            <article id="myProjectsHeading">
                 <h2>Projects</h2>
                 <p>Here are some of the projects I've built:</p>
             </article>
-            <div>
-                <img src="images/doctor.svg">
-                <article></article>
-                <article></article>
-                <img src="images/doctor.svg">
-                <img src="images/doctor.svg">
-                <article></article>
+            <div id="myProjectsDiv">
+                <img src="images/doctor.svg" height="400px">
+                <article>
+                    <h3>Medizorg</h3>
+                    <p>
+                        Medizorg is an application that leverages the power of AI chatbots to
+                        provide a user with a provisional diagnosis and uses video conferencing
+                        for telemedicine. It is being built with Flutter's BLoC architecural
+                        pattern and has features like Video Calling, User Authentication, Device Permission
+                        mnagement and internet connectivity.
+                    </p>
+                </article>
+                <article>
+                    <h3>Musicplayer</h3>
+                    <p>
+                        MusicPlayer is a Flutter application that reaches deep into Android
+                        platform APIs through method channels, an amazing feature of Flutter, to read 
+                        and play music files stored on any android device. It can
+                        modify files on a device and store data locally.
+                    </p>
+                </article>
+                <div class="projectImages">
+                    <img src="appScreenshots/nowplayingpage" height="400px">
+                    <img src="appScreenshots/artistsscreen" height="400px">
+                </div>
+                <img src="images/doctor.svg" height="400px">
+                <article>
+                    <h3>KTNotes</h3>
+                    <p>
+                        KTNotes is a psychology experiment.
+                        It's a notekeeper app built with a unique color combination
+                        and to supports emojis and fancy text. These features were integrated to
+                        test how well a simple note app can engage a user.
+                        It's a native android application built first with Java and then refactored
+                        to Kotlin. It implements recyclerView, stores notes in a local SQLite database 
+                        and is colorful and fun to use.
+                    </p>
+                </article>
             </div>
         </section>
         <footer>
-            <div></div>
-            <div></div>
+            <div id="contactDiv">
+                <h2>Let's build together!</h2>
+                <p>
+                    Whether it's to build you a new app or to improve an existing app, contact me!
+                    <br><br>Your finished project is just one email and a few interesting conversations away
+                </p>
+            </div>
+            <div id="siteCredits" class="centeredContent">
+                <p>Designed by Isaac Sokari. Built by me, Pete</p>
+            </div>
         </footer>
     </body>
 </html>
