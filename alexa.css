@@ -53,15 +53,24 @@ div#skillsList {
     padding-left: 40px;
 }
 
+footer {
+    background-color: #E5E7EB;
+    margin-top: 50px;
+}
+
 footer div#contactDiv {
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     color: dimgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer div#siteCredits {
-    background-color: darkgray;
+    background-color: #9CA3AF;
     height: 70px;
     color: antiquewhite;
 }
@@ -77,6 +86,10 @@ nav#tabs {
 section.paddedSection {
     margin-left: 40px;
     margin-right: 40px;
+}
+
+section.paddedSection div#myProjectsDiv article#medizorgArticle {
+    padding-right: 100px;
 }
 
 section.twoItemFlex {
