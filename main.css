@@ -24,6 +24,10 @@ article#myProjectsHeading {
     justify-content: center;
 }
 
+.contactIcon {
+    margin: 0px 8px;
+}
+
 div#introDiv {
     text-align: center;
     display: flex;
@@ -79,10 +83,6 @@ h1 {
     font-size: 3.0rem;
 }
 
-nav#tabs {
-    display: inline;
-}
-
 section.paddedSection {
     margin-left: 40px;
     margin-right: 40px;
@@ -95,4 +95,22 @@ section.paddedSection div#myProjectsDiv article#medizorgArticle {
 section.twoItemFlex {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+#tabBar {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.tabItem {
+    padding: 6px 12px;
+    margin: 0px 4px;
+    border: none;
+    border-radius: 4px;
+    background-color: inherit;
+    font-size: 1.05rem;
+}
+
+.tabItem:hover {
+    background-color: #9CA3AF;
 }
