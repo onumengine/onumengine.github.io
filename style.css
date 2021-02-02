@@ -1,0 +1,151 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: medium;
+    font-family: sans-serif;
+    color: #4B5563;
+}
+
+@media (max-device-width: 400px) {
+    body {
+        text-align: center;
+    }
+    article {
+        text-align: start;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section#projectsSection {
+        display: block;
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+article#myProjectsHeading {
+    display: block;
+    margin: 60px 0px;
+}
+
+button.flatButton {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: inherit;
+    color: inherit;
+    padding: 6px 8px;
+    font-size: inherit;
+}
+
+#centeredContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactDiv {
+    padding: 40px;
+}
+
+div#myIntroDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.projectScreenshots {
+    display: flex;
+    justify-content: center;
+}
+
+div.projectScreenshots img {
+    margin: 0px 20px;
+}
+
+footer {
+    background-color: #D1D5DB;
+}
+
+.gridItem {
+    margin: 20px 40px;
+}
+
+#myProjectsHeading {
+    margin: 40px 0px;
+}
+
+p.flatButton {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 6px 8px;
+}
+
+#paddedBody {
+    padding: 0px 40px
+}
+
+#projectsSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: max-content max-content max-content;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#siteCredits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9CA3AF;
+    text-align: center;
+    color: #F3F4F6;
+}
+
+.socialIcon {
+    padding: 0px 8px;
+}
+
+#socialIcons {
+    display: flex;
+    align-items: center;
+}
+
+.tabButton {
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#tabBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+
+.testing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

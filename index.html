@@ -3,77 +3,83 @@
     <head>
         <meta charset="utf-8">
         <title>Meet Pete</title>
-        <link rel="stylesheet" href="main.css">
-        <script src="index.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <nav id="tabBar">
-            <button id="homeButton" onclick="openPage(event, 'mainPage')" class="tabItem">Home</button>
-            <p class="tabItem">Portfolio</p>
-            <p class="tabItem">Resume</p>
-            <p class="flatButton tabItem">Hire me</p>
+            <p id="homeButton" class="tabButton" onclick="openPage(event, 'mainPage')" class="tabItem">Home</p>
+            <p class="tabButton">About</p>
+            <p class="tabButton">Portfolio</p>
+            <p class="tabButton">Resume</p>
+            <p class="flatButton tabButton">Hire me</p>
         </nav>
         <div id="mainPage" class="tabContent">
-            <section class="twoItemFlex">
-                <div id="myIntroDiv" class="centeredContent">
-                    <div>
-                        <h3>Hey there!</h3>
-                        <h1>I'm Pete.</h1>
-                        <h3>I build mobile applications<br>that are fun to use</h3>
+            <div id="paddedBody">
+                <section class="row">
+                    <div id="myIntroDiv" class="centeredContent">
+                        <div class="testing">
+                            <h3>Hey there!</h3>
+                            <h1>I'm Pete.</h1>
+                            <h3>I build mobile applications<br>that are fun to use</h3>
+                            <br>
+                            <div id="socialIcons">
+                                <img class="socialIcon" src="icons/github-logo.png" height="40px">
+                                <img class="socialIcon" src="icons/icons8-twitter-48.png">
+                                <img class="socialIcon" src="icons/linkedin.png" height="40px">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img class="contactIcon" src="icons/github-logo.png" height="40px">
-                        <img class="contactIcon" src="icons/icons8-twitter-48.png">
-                        <img class="contactIcon" src="icons/linkedin.png" height="40px">
+                    <div class="centeredContent">
+                        <img src="images/undraw_feeling_proud_qne1.png" height="400px">
                     </div>
-                </div>
-                <div class="centeredContent">
-                    <img src="images/undraw_feeling_proud_qne1.png" height="400px">
-                </div>
-            </section>
-            <section class="twoItemFlex paddedSection">
-                <article>
-                    <h2>Skills and Portfolio</h2>
-                    <p>
-                        From the early days of building mobile apps with Python's kivy framework to building native
-                        Android apps with Java and Kotlin and cross-platform apps with Flutter, I've picked up these
-                        skills. They come in handy with mobile apps and some of them are even used in building
-                        websites.
-                    </p>
-                    <div>
+                </section>
+                <section class="row">
+                    <article>
+                        <h2>Skills and Portfolio</h2>
                         <p>
-                            <strong>Mobile applications:</strong> Hybrid(Android and iOS) apps with Flutter | Native Android(Java and Kotlin)
+                            From the early days of building mobile apps with Python's kivy framework to building native
+                            Android apps with Java and Kotlin and cross-platform apps with Flutter, I've picked up these
+                            skills. They come in handy with mobile apps and some of them are even used in building
+                            websites.
                         </p>
-                        <p>
-                            <strong>Backend:</strong> Django | Firebase
-                        </p>
-                        <p>
-                            <strong>Collaboration:</strong> Git and Github | Gitflow workflow
-                        </p>
+                        <div>
+                            <p>
+                                <strong>Mobile applications:</strong> Hybrid(Android and iOS) apps with Flutter | Native Android(Java and Kotlin)
+                            </p>
+                            <p>
+                                <strong>Backend:</strong> Django | Firebase
+                            </p>
+                            <p>
+                                <strong>Collaboration:</strong> Git and Github | Gitflow workflow
+                            </p>
+                        </div>
+                    </article>
+                    <div class="introImage">
+                        <img src="images/undraw_hacker_mindset_gjwq.png" height="400px">
                     </div>
-                </article>
-                <div class="introImage">
-                    <img src="images/undraw_hacker_mindset_gjwq.png" height="400px">
+                </section>
+                <div>
+                    <article id="myProjectsHeading">
+                        <h2>Projects</h2>
+                        <p>Here are some of the projects I've built:</p>
+                    </article>
                 </div>
-            </section>
-            <section class="paddedSection">
-                <article id="myProjectsHeading">
-                    <h2>Projects</h2>
-                    <p>Here are some of the projects I've built:</p>
-                </article>
-                <div id="myProjectsDiv">
-                    <img src="images/doctor.svg" height="400px">
-                    <article id="medizorgArticle">
+                <section id="projectsSection">
+                    <div class="gridItem projectScreenshots">
+                        <img src="images/doctor.svg" height="400px">
+                    </div>
+                    <article id="medizorgArticle" class="gridItem">
                         <h3>Medizorg</h3>
                         <p>
                             Medizorg is an application that leverages the power of AI chatbots to
                             provide a user with a provisional diagnosis and uses video conferencing
                             for telemedicine.<br><br>It is being built with Flutter's BLoC architecural
                             pattern and has features like Video Calling, User Authentication, Device Permission
-                            mnagement and internet connectivity.
+                            management and internet connectivity.
                         </p>
                     </article>
-                    <article>
+                    <article id="musicPlayerArticle" class="gridItem">
                         <h3>Musicplayer</h3>
                         <p>
                             MusicPlayer is a Flutter application that reaches deep into Android
@@ -82,15 +88,15 @@
                             modify files on a device and store data locally.
                         </p>
                     </article>
-                    <div class="projectImages">
+                    <div class="gridItem projectScreenshots">
                         <img src="appScreenshots/nowplayingpage" height="400px">
                         <img src="appScreenshots/artistsscreen" height="400px">
                     </div>
-                    <div>
+                    <div class="gridItem projectScreenshots">
                         <img src="appScreenshots/KT_note_list_activity.png" height="400px">
                         <img src="appScreenshots/KT_note_activity.png" height="400px">
                     </div>
-                    <article>
+                    <article class="gridItem">
                         <h3>KTNotes</h3>
                         <p>
                             KTNotes is a psychology experiment.
@@ -103,8 +109,8 @@
                             and is colorful and fun to use.
                         </p>
                     </article>
-                </div>
-            </section>
+                </section>
+            </div>
             <footer>
                 <div id="contactDiv">
                     <h2>Let's Build Together!</h2>
@@ -112,9 +118,11 @@
                         Whether it's to build you a new app or to improve an existing app, contact me.
                         <br><br>Your finished project is just one email and a few interesting conversations away!
                     </p>
+                    <button class="flatButton">Send an email</button>
                 </div>
-                <div id="siteCredits" class="centeredContent">
-                    <p>Designed by Isaac Sokari. Built by me, Pete</p>
+                <div></div>
+                <div id="siteCredits">
+                    <p>Designed by Isaac Sokari. Built by me, Pete.</p>
                 </div>
             </footer>
         </div>
