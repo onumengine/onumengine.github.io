@@ -11,6 +11,7 @@ body {
 @media (max-device-width: 400px) {
     body {
         text-align: center;
+        font-size: large;
     }
     article {
         text-align: start;
