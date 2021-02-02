@@ -25,6 +25,18 @@ body {
     section#projectsSection {
         display: block;
     }
+    h3#heyThereText {
+        font-size: x-large;
+    }
+    footer {
+        margin-top: 200px;
+    }
+    footer div#contactDiv {
+        text-align: start;
+    }
+    footer div#contactDiv button {
+        font-size: inherit;
+    }
 }
 
 article {
