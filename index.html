@@ -8,11 +8,11 @@
     </head>
     <body>
         <nav id="tabBar">
-            <p id="homeButton" class="tabButton" onclick="openPage(event, 'mainPage')" class="tabItem">Home</p>
-            <p class="tabButton">About</p>
-            <p class="tabButton">Portfolio</p>
-            <p class="tabButton">Resume</p>
-            <p class="flatButton tabButton">Hire me</p>
+            <button id="homeButton" class="tabButton">Home</button>
+            <button id="aboutButton" class="tabButton">About</button>
+            <button id="portfolioButton" class="tabButton">Portfolio</button>
+            <button id="resumeButton" class="tabButton">Resume</button>
+            <button id="hireMeButton" class="flatButton tabButton">Hire me</button>
         </nav>
         <div id="mainPage" class="tabContent">
             <div id="paddedBody">
@@ -131,96 +131,95 @@
                 </div>
             </footer>
         </div>
-        <div id="aboutSection" class="tabContent"></div>
-        <!--
+        <div id="aboutSection" class="tabContent">
             <article id="myStory">
-            <p>HOW IT ALL STARTED</p>
-            <h1>The Story Behind The Process</h1>
-            <p>
-                It all started in 2018 when I watched the movie <em>The Internship</em>.
-                I was inspired to build an application and I started researcing the Idea.
-                I learnt Python and built a couple mobile apps with its <em>Kivy</em> 
-                framework. 
-            </p>
-            <p>
-                Eventually, I was building an app that needed me to access some advanced features
-                of the smartphone it'll be running on. Python and Kivy couldn't access those features
-                so I was stuck. I decided to learn Java,the official language for building Android
-                apps, to complete my application and that was how my journey into mobile app 
-                development started.
-            </p>
-            <p>
-                I joined the HNG i7 internship in 2019 as an Android developer and when I was done,
-                I picked up Flutter development. Learning to build apps with Flutter was the best thing
-                that happened in my app development journey. I could build applications for Android and 
-                iOS devices, desktop computers and even web apps. I was blown away by Flutter's power
-                and I've been building with it ever since.
-            </p>
-            <p>
-                I love to code and build applications but the part of coding that interests me the most 
-                is experimenting with new technologies and APIs so I went into freelancing, picking
-                projects with features that interest me. Since then, I've been able to work on apps with 
-                interesting features like chatbots, video conferencing, in-app messaging and lots more.
-                Samples of my code can be found on my 
-                <a href="https://github.com/oumengine" target="blank">Github profile</a>.
-            </p>
-            <p>
-                Whether it's to build a new app or to add new features to an existing one, 
-                <a href="#footer">get in touch</a> with me and we'll get that project off the ground.
-            </p>
-            <p>
-                I'm ready to do jobs like these for you:
-            </p>
-        </article>
-        <section id="servicesSection">
-            <div class="serviceItem">
-                <img>
-                <h3>
-                    Build your mobile app
-                </h3>
+                <p>HOW IT ALL STARTED</p>
+                <h1>The Story Behind The Process</h1>
                 <p>
-                    Built with Java and/or Kotlin, native Android apps are the most 
-                    stable of all Android apps.
-                    Hurry and contact me if you want your native android app built.
+                    It all started in 2018 when I watched the movie <em>The Internship</em>.
+                    I was inspired to build an application and I started researcing the Idea.
+                    I learnt Python and built a couple mobile apps with its <em>Kivy</em> 
+                    framework. 
                 </p>
-            </div>
-            <div class="serviceItem">
-                <img>
-                <h3>
-                    Build a hybrid app
-                </h3>
                 <p>
-                    A hybrid app runs on Android and iOS. Building a hybrid app is very
-                    cost-effective since you'll be maintaining only one codebase and you won't
-                    have to hire another developer to rebuild your app for a different platform.
-                    You hybrid app is just <a href="#formSection">a few clicks</a>a away.
+                    Eventually, I was building an app that needed me to access some advanced features
+                    of the smartphone it'll be running on. Python and Kivy couldn't access those features
+                    so I was stuck. I decided to learn Java,the official language for building Android
+                    apps, to complete my application and that was how my journey into mobile app 
+                    development started.
                 </p>
-            </div>
-            <div class="serviceItem">
-                <img>
-                <h3>
-                    Add features to your app
-                </h3>
                 <p>
-                    I'll add any feature you want to your application. Yes, any feature. If your
-                    app is built with Java, Kotlin or Flutter, that new feature is just one email
-                    and a couple interesting conversations away. Just 
-                    <a href="#formSection">contact me!</a>
+                    I joined the HNG i7 internship in 2019 as an Android developer and when I was done,
+                    I picked up Flutter development. Learning to build apps with Flutter was the best thing
+                    that happened in my app development journey. I could build applications for Android and 
+                    iOS devices, desktop computers and even web apps. I was blown away by Flutter's power
+                    and I've been building with it ever since.
                 </p>
-            </div>
-            <div class="serviceItem">
-                <img>
-                <h3>
-                    Improve User Experience
-                </h3>
                 <p>
-                    Your users' tendency to uninstall your app will drop considerably if you improve its 
-                    user experience, making it more fun and less intrusive. I'll be happy to combine my
-                    knowledge of psychology with code to increase your number of daily active users. Just 
-                    <a href="#formSection">contact me!</a>
+                    I love to code and build applications but the part of coding that interests me the most 
+                    is experimenting with new technologies and APIs so I went into freelancing, picking
+                    projects with features that interest me. Since then, I've been able to work on apps with 
+                    interesting features like chatbots, video conferencing, in-app messaging and lots more.
+                    Samples of my code can be found on my 
+                    <a href="https://github.com/oumengine" target="blank">Github profile</a>.
                 </p>
-            </div>
-        </section>
-        -->
+                <p>
+                    Whether it's to build a new app or to add new features to an existing one, 
+                    <a href="#footer">get in touch</a> with me and we'll get that project off the ground.
+                </p>
+                <p>
+                    I'm ready to do jobs like these for you:
+                </p>
+            </article>
+            <section id="servicesSection">
+                <div class="serviceItem">
+                    <img src="images/buildYourMobileApp.png" height="200px">
+                    <h3>
+                        Build your mobile app
+                    </h3>
+                    <p>
+                        Built with Java and/or Kotlin, native Android apps are the most 
+                        stable of all Android apps.
+                        Hurry and contact me if you want your native android app built.
+                    </p>
+                </div>
+                <div class="serviceItem">
+                    <img src="images/buildHybridApp.png" height="200px">
+                    <h3>
+                        Build a hybrid app
+                    </h3>
+                    <p>
+                        A hybrid app runs on Android and iOS. Building a hybrid app is very
+                        cost-effective since you'll be maintaining only one codebase and you won't
+                        have to hire another developer to rebuild your app for a different platform.
+                        You hybrid app is just <a href="#formSection">a few clicks</a> away.
+                    </p>
+                </div>
+                <div class="serviceItem">
+                    <img src="images/addFeaturesToApp.png" height="200px">
+                    <h3>
+                        Add features to your app
+                    </h3>
+                    <p>
+                        I'll add any feature you want to your application. Yes, any feature. If your
+                        app is built with Java, Kotlin or Flutter, that new feature is just one email
+                        and a couple interesting conversations away. Just 
+                        <a href="#formSection">contact me!</a>
+                    </p>
+                </div>
+                <div class="serviceItem">
+                    <img src="images/improveUserExperience.png" height="200px">
+                    <h3>
+                        Improve User Experience
+                    </h3>
+                    <p>
+                        Your users' tendency to uninstall your app will drop considerably if you improve its 
+                        user experience, making it more fun and less intrusive. I'll be happy to combine my
+                        knowledge of psychology with code to increase your number of daily active users. Just 
+                        <a href="#formSection">contact me!</a>
+                    </p>
+                </div>
+            </section>
+        </div>
     </body>
 </html>

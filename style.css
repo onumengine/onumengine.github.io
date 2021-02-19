@@ -13,6 +13,10 @@ body {
         text-align: center;
         font-size: large;
     }
+    #aboutSection {
+        display: flex;
+        flex-direction: column;
+    }
     article {
         text-align: start;
     }
@@ -28,9 +32,6 @@ body {
         border-top-width: 1px;
         padding-top: 40px;
     }
-    footer {
-        margin-top: 200px;
-    }
     footer div#contactDiv {
         text-align: start;
     }
@@ -43,6 +44,13 @@ body {
     p {
         font-size: inherit;
     }
+    .serviceItem {
+        margin: 20px 16px;
+    }
+    #servicesSection {
+        display: flex;
+        flex-direction: column;
+    }
     #tabBar {
         position: fixed;
         top: 0px;
@@ -50,7 +58,7 @@ body {
         right: 0px;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         background-color: white;
     }
@@ -68,7 +76,7 @@ body {
     }
 }
 
-@media (max-device-width: 1440px) {
+@media (max-device-width: 1024px) {
     body {
         text-align: center;
         font-size: large;
@@ -128,7 +136,10 @@ body {
     }
 }
 
-@media (max-device-width: 768px) {}
+#aboutSection {
+    padding: 0px 40px;
+    padding-bottom: 100px;
+}
 
 article {
     display: flex;
@@ -181,6 +192,7 @@ div.projectScreenshots img {
 
 footer {
     background-color: #D1D5DB;
+    margin-top: 200px;
 }
 
 .gridItem {
@@ -210,6 +222,18 @@ p.flatButton {
 .row {
     display: flex;
     justify-content: space-evenly;
+}
+
+.serviceItem {
+    border-style: none;
+    border-radius: 16px;
+    padding: 0px 16px;
+    margin: 8px 8px;
+    box-shadow: 2px 2px;
+}
+
+#servicesSection {
+    display: flex;
 }
 
 #siteCredits {
