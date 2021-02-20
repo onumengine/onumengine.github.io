@@ -117,3 +117,26 @@ function checkWindowResolution() {
         clearInterval(interval);
     }
 }
+
+// This method displays a border by applying the class 'bordered' to its event target
+function addBorder(event) {
+    var selectedImage = event.target;
+    selectedImage.classList.add('bordered');
+}
+
+// This method removes a border from an element by removing the class 'bordered' from its event target
+function removeBorder(event) {
+    var unselectedImage = event.target;
+    unselectedImage.classList.remove('bordered');
+}
+
+// This method changes the image on display by replacing the src of the large image with the src of
+// the selected selector
+function changeImage(event) {
+    var homeImage = document.getElementById('exteriorImage');
+    var selectedItem = event.target;
+    var newImageSource = selectedItem.getAttribute('src');
+
+    homeImage.setAttribute('src', newImageSource);
+}
+
