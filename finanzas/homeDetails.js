@@ -110,6 +110,7 @@ function toggleImageSource() {
     }
 }
 
+/*
 function checkWindowResolution() {
     if (window.outerWidth <= 592) {
         var interval = setInterval(toggleImageSource, 3000);
@@ -117,6 +118,7 @@ function checkWindowResolution() {
         clearInterval(interval);
     }
 }
+*/
 
 // This method displays a border by applying the class 'bordered' to its event target
 function addBorder(event) {
