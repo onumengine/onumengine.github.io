@@ -188,6 +188,10 @@ section#pictureDisplaySection img {
         padding: 0;
     }
 
+    h2 {
+        font-size: 3rem;
+    }
+
     header {
         padding-top: 50px;
     }
