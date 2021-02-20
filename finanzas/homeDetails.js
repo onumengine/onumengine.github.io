@@ -12,7 +12,7 @@ window.onclick = function(event) {
     } 
 }
 
-window.onresize = checkWindowResolution;
+// window.onresize = checkWindowResolution;
 
 var mobileImageSources = [
     "img/home_exterior.png",
@@ -36,7 +36,7 @@ function init() {
         item.onclick = changeDropdownButtonLabel;
     }
 
-    setTimeout(checkWindowResolution, 2);
+    setTimeout(checkWindowResolution, 2000);
 }
 
 function hideAllDropdowns() {
@@ -111,10 +111,9 @@ function toggleImageSource() {
 }
 
 function checkWindowResolution() {
-    console.log(window.innerWidth);
-    if (window.innerWidth <= 592) {
-        setInterval(toggleImageSource, 3000);
+    if (window.outerWidth <= 592) {
+        var interval = setInterval(toggleImageSource, 3000);
     } else {
-        return;
+        clearInterval(interval);
     }
 }

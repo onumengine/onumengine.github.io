@@ -4,8 +4,10 @@
 
 body {
     font-size: medium;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Nunito, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: #1F2937;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 button.dropdownButton {
@@ -31,6 +33,10 @@ button.dropdownItem {
     text-align: start;
 }
 
+div#buttonSection {
+    margin: 30px;
+}
+
 div.dropdown {
     border: none;
     border-width: 1px;
@@ -46,27 +52,37 @@ div#form {
     text-align: center;
     padding-bottom: 100px;
     padding-top: 10px;
+    margin: 60px 60px 60px 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 div#pageContent {
     display: grid;
     grid-template-columns: 55% 45%;
     grid-gap: 10px;
-    position: relative;
-    top: 68px;
+}
+
+.filledButton {
+    background-color: #076943;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100px;
+    color: #FFFFFF;
+}
+
+h2 {
+    padding-left: 70px;
 }
 
 header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
     width: 100%;    
     background-color: white;
     opacity: 1;
-    z-index: 3;
-    padding-left: 40px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .hidden {
@@ -75,6 +91,22 @@ header {
 
 img {
     max-width: 100%;
+}
+
+img.homeImage {
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.outlinedButton {
+    border-color: #076943;
+    background-color: inherit;
+    border-width: 1.5px;
+    border-radius: 5px;
+    color: #374151;
+    padding: 12px;
+    width: 100px;
 }
 
 section#pictureDisplaySection img {
@@ -131,8 +163,12 @@ section#pictureDisplaySection img {
         padding: 0;
     }
 
+    header {
+        padding-top: 50px;
+    }
+
     header img {
-        height: 100px
+        height: 50px
     }
 
     img#interiorImage {

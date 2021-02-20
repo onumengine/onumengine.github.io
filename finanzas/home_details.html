@@ -8,15 +8,16 @@
     </head>
     <body>
         <header>
-            <img src="img/finanzasLogo.svg" height="60px">
+            <img src="img/finanzasLogo.svg" height="22px">
         </header>
+        <h2>Texas, United States</h2>
         <div id="pageContent">
             <section id="pictureDisplaySection">
                 <div>
-                    <img id="exteriorImage" src="img/home_exterior.png" alt="home exterior">
+                    <img id="exteriorImage" class="homeImage" src="img/home_exterior.png" alt="home exterior">
                 </div>
                 <div>
-                    <img id="interiorImage" src="img/home_interior.png" alt="home interior">
+                    <img id="interiorImage" class="homeImage" src="img/home_interior.png" alt="home interior">
                 </div>
             </section>
             <section id="homeDescriptionSection">
@@ -29,7 +30,7 @@
                     <div>
                         <button id="categoryButton" class="dropdownButton">Choose category</button>
                     </div>
-                    <div class="dropdown" id="categoriesDropdown">
+                    <div class="dropdown hidden" id="categoriesDropdown">
                         <div>
                             <button class="dropdownItem categoriesDropdownItem">Diamond (&#8358 2,500,000)</button>
                         </div>
@@ -46,7 +47,7 @@
                         <button id="slotsButton" class="dropdownButton">
                             No of slots
                         </button>
-                        <div class="dropdown" id="slotsDropdown">
+                        <div class="dropdown hidden" id="slotsDropdown">
                             <div>
                                 <button id="button1" class="dropdownItem slotsDropdownItem">1</button>
                             </div>
@@ -63,6 +64,9 @@
                                 <button id="button5" class="dropdownItem slotsDropdownItem">5</button>
                             </div>
                         </div>
+                    </div>
+                    <div id="buttonSection">
+                        <button id="payButton" class="outlinedButton">Pay</button>
                     </div>
                     <section>
                         <div></div>
