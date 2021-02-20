@@ -276,3 +276,24 @@ p.flatButton {
     justify-content: center;
     align-items: center;
 }
+
+ul#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    background-color: #9CA3AF;
+    overflow: hidden;
+}
+
+ul#navbar li {
+    float: right;
+}
+
+ul#navbar li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: inherit;
+}

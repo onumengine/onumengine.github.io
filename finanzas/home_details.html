@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Property</title>
+        <link rel="stylesheet" href="home_details.css">
+        <script src="homeDetails.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="img/finanzasLogo.svg" height="60px">
+        </header>
+        <div id="pageContent">
+            <section id="pictureDisplaySection">
+                <div id="prevButton"></div>
+                <div>
+                    <img id="exteriorImage" src="img/home_exterior.png" alt="home exterior">
+                </div>
+                <div>
+                    <img id="interiorImage" src="img/home_interior.png" alt="home interior">
+                </div>
+            </section>
+            <section id="homeDescriptionSection">
+                <div id="form">
+                    <div>
+                        <h1>Description</h1>
+                        <p>Description text goes here...</p>
+                    </div>
+                    <p>Select category</p>
+                    <div>
+                        <button id="categoryButton" class="dropdownButton">Choose category</button>
+                    </div>
+                    <div class="dropdown" id="categoriesDropdown">
+                        <div>
+                            <button class="dropdownItem categoriesDropdownItem">Diamond (&#8358 2,500,000)</button>
+                        </div>
+                        <div>
+                            <button class="dropdownItem categoriesDropdownItem">Gold (&#8358 500,000)</button>
+                        </div>
+                        <div>
+                            <button class="dropdownItem categoriesDropdownItem">Silver (&#8358 100,000)</button>
+                        </div>
+                    </div>
+                    <div id="slotsDiv">
+                        <br>
+                        <p>Number of slots</p>
+                        <button id="slotsButton" class="dropdownButton">
+                            No of slots
+                        </button>
+                        <div class="dropdown" id="slotsDropdown">
+                            <div>
+                                <button id="button1" class="dropdownItem slotsDropdownItem">1</button>
+                            </div>
+                            <div>
+                                <button id="button2" class="dropdownItem slotsDropdownItem">2</button>
+                            </div>
+                            <div>
+                                <button id="button3" class="dropdownItem slotsDropdownItem">3</button>
+                            </div>
+                            <div>
+                                <button id="button4" class="dropdownItem slotsDropdownItem">4</button>
+                            </div>
+                            <div>
+                                <button id="button5" class="dropdownItem slotsDropdownItem">5</button>
+                            </div>
+                        </div>
+                    </div>
+                    <section>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

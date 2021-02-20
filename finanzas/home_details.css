@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: medium;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1F2937;
+}
+
+button.dropdownButton {
+    color: inherit;
+    background-color: inherit;
+    border-color: #111827;
+    width: 400px;
+    padding: 8px;
+    font-size: inherit;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    text-align: start;
+}
+
+button.dropdownItem {
+    width: 400px;
+    border: none;
+    background-color: inherit;
+    padding: 8px;
+    font-size: inherit;
+    color: inherit;
+    text-align: start;
+}
+
+div.dropdown {
+    border: none;
+    border-width: 1px;
+    border-radius: 2px;
+    background-color: inherit;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px 4px #D1D5DB;
+}
+
+div#form {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+
+div#pageContent {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-gap: 10px;
+    position: relative;
+    top: 68px;
+}
+
+div#prevButton {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;    
+    background-color: white;
+    opacity: 1;
+    z-index: 3;
+    padding-left: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.shown {
+    display: block;
+}
+
+@media (max-device-width: 592px) {
+
+    button.dropdownItem {
+        width: 100%;
+        height: 100px;
+        font-size: 3rem;
+        padding: 8px;
+    }
+
+    button.dropdownButton {
+        width: 100%;
+        margin-right: 40px;
+        height: 100px;
+        font-size: 3rem;
+        color: black;
+    }
+
+    div.dropdown {
+        width: 100%;
+        margin-right: 40px;
+    }
+
+    div#form {
+        text-align: start;
+        padding-left: 40px;
+    }
+
+    div#form div, div#form p {
+        font-size: 3rem;
+        padding-bottom: 60px;
+    }
+
+    div#pageContent {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        grid-gap: none;
+    }
+
+    div#prevButton {
+        display: block;
+        width: 150px;
+        height: 150px;
+        background-color: #111827;
+        opacity: 0.8;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 4px 4px 4px 4px;
+        z-index: 2;
+        position: relative;
+        right: -25px;
+        top: 400px;
+    }
+
+    div#slotsDiv {
+        padding: 0;
+    }
+
+    header img {
+        height: 100px
+    }
+
+    img#interiorImage {
+        display: none;
+    }
+}
