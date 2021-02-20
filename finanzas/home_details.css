@@ -184,4 +184,17 @@ section#pictureDisplaySection img {
     header img {
         height: 50px
     }
+
+    div#imageHolder {
+        margin: 0;
+        padding: 0;
+    }
+
+    img#exteriorImage {
+        width: 100%;
+    }
+
+    section#pictureDisplaySection {
+        margin-left: 0;
+    }
 }

@@ -36,7 +36,7 @@ function init() {
         item.onclick = changeDropdownButtonLabel;
     }
 
-    setTimeout(checkWindowResolution, 2000);
+    //setTimeout(checkWindowResolution, 2000);
 }
 
 function hideAllDropdowns() {
