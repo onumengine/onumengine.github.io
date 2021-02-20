@@ -22,6 +22,7 @@ var mobileImageSources = [
 function init() {
     var dropdownButtons = document.getElementsByClassName("dropdownButton")
     var dropdownItems = document.getElementsByClassName("dropdownItem");
+    var selectorImages = document.getElementsByClassName("selectableItem");
 
 
     hideAllDropdowns();
@@ -34,6 +35,10 @@ function init() {
     // Attach callbacks to each of the dropdown items
     for (let item of dropdownItems) {
         item.onclick = changeDropdownButtonLabel;
+    }
+
+    for (let image of selectorImages) {
+        image.onclick = onSelectorClick;
     }
 
     //setTimeout(checkWindowResolution, 2000);
@@ -132,6 +137,14 @@ function removeBorder(event) {
     unselectedImage.classList.remove('bordered');
 }
 
+// This method removes borders from all selectorImages
+function removeSelectorBorders() {
+    var selectorImages = document.getElementsByClassName("selectableItem");
+    for (let image of selectorImages) {
+        image.classList.remove('bordered');
+    }
+}
+
 // This method changes the image on display by replacing the src of the large image with the src of
 // the selected selector
 function changeImage(event) {
@@ -142,3 +155,8 @@ function changeImage(event) {
     homeImage.setAttribute('src', newImageSource);
 }
 
+function onSelectorClick(event) {
+    removeSelectorBorders();
+    addBorder(event);
+    changeImage(event);
+}
