@@ -12,6 +12,8 @@ window.onclick = function(event) {
     } 
 }
 
+window.onresize = checkWindowResolution;
+
 var mobileImageSources = [
     "img/home_exterior.png",
     "img/home_interior.png"
@@ -20,7 +22,6 @@ var mobileImageSources = [
 function init() {
     var dropdownButtons = document.getElementsByClassName("dropdownButton")
     var dropdownItems = document.getElementsByClassName("dropdownItem");
-    var skipButton = document.getElementById("prevButton");
 
 
     hideAllDropdowns();
@@ -35,8 +36,7 @@ function init() {
         item.onclick = changeDropdownButtonLabel;
     }
 
-    skipButton.onclick = toggleImageSource;
-    
+    setTimeout(checkWindowResolution, 2);
 }
 
 function hideAllDropdowns() {
@@ -103,7 +103,18 @@ function toggleImageSource() {
     var exteriorImage = document.getElementById('exteriorImage');
     if (exteriorImage.getAttribute('src') == mobileImageSources[0]) {
         exteriorImage.setAttribute('src', mobileImageSources[1]);
+        return;
     } else {
         exteriorImage.setAttribute('src', mobileImageSources[0]);
+        return;
+    }
+}
+
+function checkWindowResolution() {
+    console.log(window.innerWidth);
+    if (window.innerWidth <= 592) {
+        setInterval(toggleImageSource, 3000);
+    } else {
+        return;
     }
 }

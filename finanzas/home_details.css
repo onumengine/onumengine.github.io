@@ -56,10 +56,6 @@ div#pageContent {
     top: 68px;
 }
 
-div#prevButton {
-    display: none;
-}
-
 header {
     position: fixed;
     top: 0px;
@@ -79,6 +75,13 @@ header {
 
 img {
     max-width: 100%;
+}
+
+section#pictureDisplaySection img {
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .shown {
@@ -122,21 +125,6 @@ img {
         flex-direction: column;
         grid-template-columns: none;
         grid-gap: none;
-    }
-
-    div#prevButton {
-        display: block;
-        width: 150px;
-        height: 150px;
-        background-color: #111827;
-        opacity: 0.8;
-        border-radius: 50%;
-        border: none;
-        box-shadow: 4px 4px 4px 4px;
-        z-index: 2;
-        position: relative;
-        right: -25px;
-        top: 400px;
     }
 
     div#slotsDiv {
