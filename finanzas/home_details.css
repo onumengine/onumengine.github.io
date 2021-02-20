@@ -10,6 +10,10 @@ body {
     line-height: 1.5;
 }
 
+.bordered {
+    border-style: solid;
+}
+
 button.dropdownButton {
     color: inherit;
     background-color: inherit;
