@@ -108,6 +108,7 @@ function changeDropdownButtonLabel(event) {
     }
 }
 
+/*
 function toggleImageSource() {
     var exteriorImage = document.getElementById('exteriorImage');
     if (exteriorImage.getAttribute('src') == mobileImageSources[0]) {
@@ -118,23 +119,24 @@ function toggleImageSource() {
         return;
     }
 }
+*/
 
 function moveToNextImage() {
     var exteriorImage = document.getElementById('exteriorImage');
     var imgSrc = exteriorImage.getAttribute('src');
-    console.log(imgSrc);
     var indexOfSource = mobileImageSources.indexOf(imgSrc);
-    console.log(indexOfSource);
-    exteriorImage.setAttribute('src', mobileImageSources[indexOfSource+1]);
+    if ((indexOfSource + 1) < mobileImageSources.length) {
+        exteriorImage.setAttribute('src', mobileImageSources[indexOfSource+1]);
+    }
 }
 
 function moveToPreviousImage() {
     var exteriorImage = document.getElementById('exteriorImage');
     var imgSrc = exteriorImage.getAttribute('src');
-    console.log(imgSrc);
     var indexOfSource = mobileImageSources.indexOf(imgSrc);
-    console.log(indexOfSource);
-    exteriorImage.setAttribute('src', mobileImageSources[indexOfSource-1]);
+    if ((indexOfSource - 1) >= 0) {
+        exteriorImage.setAttribute('src', mobileImageSources[indexOfSource-1]);
+    }
 }
 
 /*
