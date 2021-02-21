@@ -125,7 +125,8 @@ function moveToNextImage() {
     var exteriorImage = document.getElementById('exteriorImage');
     var imgSrc = exteriorImage.getAttribute('src');
     var indexOfSource = mobileImageSources.indexOf(imgSrc);
-    if ((indexOfSource + 1) < mobileImageSources.length) {
+    
+    if ((indexOfSource + 1) < mobileImageSources.length) { // Move to the next image only if the current src isn't the last in the mobileImageSources array
         exteriorImage.setAttribute('src', mobileImageSources[indexOfSource+1]);
     }
 }
@@ -134,7 +135,8 @@ function moveToPreviousImage() {
     var exteriorImage = document.getElementById('exteriorImage');
     var imgSrc = exteriorImage.getAttribute('src');
     var indexOfSource = mobileImageSources.indexOf(imgSrc);
-    if ((indexOfSource - 1) >= 0) {
+
+    if ((indexOfSource - 1) >= 0) { // Move to the previous image only if the current src isn't the first in the mobileImageSources array
         exteriorImage.setAttribute('src', mobileImageSources[indexOfSource-1]);
     }
 }
