@@ -12,17 +12,19 @@ window.onclick = function(event) {
     } 
 }
 
-// window.onresize = checkWindowResolution;
-
 var mobileImageSources = [
     "img/home_exterior.png",
     "img/home_interior.png"
 ];
 
+// This array will store the x-coordinates of a swipe gesture when there is a swipe on the home image
+var arrayOfXCoordinates = [];
+
 function init() {
     var dropdownButtons = document.getElementsByClassName("dropdownButton")
     var dropdownItems = document.getElementsByClassName("dropdownItem");
     var selectorImages = document.getElementsByClassName("selectableItem");
+    var homeImage = document.getElementById('exteriorImage');
 
 
     hideAllDropdowns();
@@ -40,6 +42,8 @@ function init() {
     for (let image of selectorImages) {
         image.onclick = onSelectorClick;
     }
+
+    homeImage.addEventListener('touchstart', addTouchEventListeners, false);
 
     //setTimeout(checkWindowResolution, 2000);
 }
@@ -115,6 +119,24 @@ function toggleImageSource() {
     }
 }
 
+function moveToNextImage() {
+    var exteriorImage = document.getElementById('exteriorImage');
+    if (exteriorImage.getAttribute('src') == mobileImageSources[0]) {
+        exteriorImage.setAttribute('src', mobileImageSources[1]);
+        return;
+    } else {
+        exteriorImage.setAttribute('src', mobileImageSources[0]);
+        return;
+    }
+}
+
+function moveToPreviousImage() {
+    var exteriorImage = document.getElementById('exteriorImage');
+    var imgSrc = exteriorImage.getAttribute('src');
+    var indexOfSource = mobileImageSources.indexOf(imgSrc);
+    console.log(indexOfSource);
+}
+
 /*
 function checkWindowResolution() {
     if (window.outerWidth <= 592) {
@@ -159,4 +181,49 @@ function onSelectorClick(event) {
     removeSelectorBorders();
     addBorder(event);
     changeImage(event);
+}
+
+function addTouchEventListeners(event) {
+    var startCoordsX = event.targetTouches[0].clientX;
+    arrayOfXCoordinates.push(startCoordsX);
+    
+    document.body.addEventListener('touchmove', handleTouchMove, false);
+    document.body.addEventListener('touchend', handleTouchEnd, false);
+}
+
+function removeTouchEventListeners() {
+    document.body.removeEventListener('touchmove', handleTouchMove, false);
+    document.body.removeEventListener('touchend', handleTouchEnd, false);
+    document.getElementById('exteriorImage').removeEventListener('touchstart', addTouchEventListeners, false);
+}
+
+function handleTouchMove(event) {
+    var xCor = event.targetTouches[0].clientX;
+    arrayOfXCoordinates.push(xCor);
+}
+
+function handleTouchEnd() {
+    var swipeLength = getSwipeDistance()
+    if (userSwipedRight(swipeLength)) {
+        console.log('you swiped right');
+        requestAnimationFrame(moveToNextImage);
+    } else if (userSwipedLeft(swipeLength)) {
+        console.log('you swiped left');
+        requestAnimationFrame(moveToPreviousImage);
+    }
+    // clear the array for performance benefits
+    arrayOfXCoordinates.length = 0;
+    removeTouchEventListeners();
+}
+
+function getSwipeDistance() {
+    return (arrayOfXCoordinates[arrayOfXCoordinates.length - 1] - arrayOfXCoordinates[0]);
+}
+
+function userSwipedRight(distance) {
+    return distance > 0;
+}
+
+function userSwipedLeft(distance) {
+    return distance < 0;
 }
