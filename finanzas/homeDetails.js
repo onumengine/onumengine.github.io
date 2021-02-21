@@ -121,20 +121,20 @@ function toggleImageSource() {
 
 function moveToNextImage() {
     var exteriorImage = document.getElementById('exteriorImage');
-    if (exteriorImage.getAttribute('src') == mobileImageSources[0]) {
-        exteriorImage.setAttribute('src', mobileImageSources[1]);
-        return;
-    } else {
-        exteriorImage.setAttribute('src', mobileImageSources[0]);
-        return;
-    }
+    var imgSrc = exteriorImage.getAttribute('src');
+    console.log(imgSrc);
+    var indexOfSource = mobileImageSources.indexOf(imgSrc);
+    console.log(indexOfSource);
+    exteriorImage.setAttribute('src', mobileImageSources[indexOfSource+1]);
 }
 
 function moveToPreviousImage() {
     var exteriorImage = document.getElementById('exteriorImage');
     var imgSrc = exteriorImage.getAttribute('src');
+    console.log(imgSrc);
     var indexOfSource = mobileImageSources.indexOf(imgSrc);
     console.log(indexOfSource);
+    exteriorImage.setAttribute('src', mobileImageSources[indexOfSource-1]);
 }
 
 /*
@@ -169,7 +169,7 @@ function removeSelectorBorders() {
 
 // This method changes the image on display by replacing the src of the large image with the src of
 // the selected selector
-function changeImage(event) {
+function matchImageSrcWithSelectorSrc(event) {
     var homeImage = document.getElementById('exteriorImage');
     var selectedItem = event.target;
     var newImageSource = selectedItem.getAttribute('src');
@@ -180,7 +180,7 @@ function changeImage(event) {
 function onSelectorClick(event) {
     removeSelectorBorders();
     addBorder(event);
-    changeImage(event);
+    matchImageSrcWithSelectorSrc(event);
 }
 
 function addTouchEventListeners(event) {
@@ -194,7 +194,6 @@ function addTouchEventListeners(event) {
 function removeTouchEventListeners() {
     document.body.removeEventListener('touchmove', handleTouchMove, false);
     document.body.removeEventListener('touchend', handleTouchEnd, false);
-    document.getElementById('exteriorImage').removeEventListener('touchstart', addTouchEventListeners, false);
 }
 
 function handleTouchMove(event) {
@@ -221,9 +220,9 @@ function getSwipeDistance() {
 }
 
 function userSwipedRight(distance) {
-    return distance > 0;
+    return distance < 0;
 }
 
 function userSwipedLeft(distance) {
-    return distance < 0;
+    return distance > 0;
 }
