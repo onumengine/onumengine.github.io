@@ -108,19 +108,7 @@ function changeDropdownButtonLabel(event) {
     }
 }
 
-/*
-function toggleImageSource() {
-    var exteriorImage = document.getElementById('exteriorImage');
-    if (exteriorImage.getAttribute('src') == mobileImageSources[0]) {
-        exteriorImage.setAttribute('src', mobileImageSources[1]);
-        return;
-    } else {
-        exteriorImage.setAttribute('src', mobileImageSources[0]);
-        return;
-    }
-}
-*/
-
+// This function changes the image by mooving
 function moveToNextImage() {
     var exteriorImage = document.getElementById('exteriorImage');
     var imgSrc = exteriorImage.getAttribute('src');
@@ -140,16 +128,6 @@ function moveToPreviousImage() {
         exteriorImage.setAttribute('src', mobileImageSources[indexOfSource-1]);
     }
 }
-
-/*
-function checkWindowResolution() {
-    if (window.outerWidth <= 592) {
-        var interval = setInterval(toggleImageSource, 3000);
-    } else {
-        clearInterval(interval);
-    }
-}
-*/
 
 // This method displays a border by applying the class 'bordered' to its event target
 function addBorder(event) {

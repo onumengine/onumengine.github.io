@@ -107,6 +107,10 @@ img {
     max-width: 100%;
 }
 
+img.selectableItem {
+    width: 100px;
+}
+
 .outlinedButton {
     border-color: #076943;
     background-color: inherit;
@@ -135,6 +139,12 @@ section#pictureDisplaySection img {
 }
 
 @media (max-device-width: 592px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
 
     div#buttonSection {
         text-align: center;
@@ -178,8 +188,14 @@ section#pictureDisplaySection img {
         padding-bottom: 60px;
     }
 
-    div#imageSelector {
+    div#imageHolder {
         display: none;
+    }
+
+    div#imageSelector {
+        flex-direction: row;
+        min-width: 100%;
+        overflow: hidden;
     }
 
     div#pageContent {
@@ -187,6 +203,7 @@ section#pictureDisplaySection img {
         flex-direction: column;
         grid-template-columns: none;
         grid-gap: none;
+        overflow: hidden;
     }
 
     div#slotsDiv {
@@ -211,7 +228,10 @@ section#pictureDisplaySection img {
     }
 
     img#exteriorImage {
-        width: 100%;
+    }
+
+    img.selectableItem {
+        min-width: 800px;
     }
 
     .outlinedButton {
@@ -223,6 +243,10 @@ section#pictureDisplaySection img {
     }
 
     section#pictureDisplaySection {
+        display: flex;
+        flex-direction: row;
         margin-left: 0;
+        overflow: hidden;
+        min-width: 100%;
     }
 }
