@@ -174,9 +174,9 @@ button.flatButton {
     padding: 40px;
 }
 
-div#mainPage {
+div.tabContent {
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 
 div#myIntroDiv {
