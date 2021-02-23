@@ -9,21 +9,26 @@ body {
 }
 
 @media (max-device-width: 592px) {
+
     body {
         text-align: center;
         font-size: large;
     }
+
     #aboutSection {
         display: flex;
         flex-direction: column;
     }
+
     article {
         text-align: start;
     }
+
     div#musicplayerProject {
         display: flex;
         flex-direction: column-reverse;
     }
+
     div.project{
         display: flex;
         flex-direction: column;
@@ -32,25 +37,32 @@ body {
         border-top-width: 1px;
         padding-top: 40px;
     }
+
     footer div#contactDiv {
         text-align: start;
     }
+
     footer div#contactDiv button {
         font-size: inherit;
     }
+
     h1 {
         font-size: 7rem;
     }
+
     p {
         font-size: inherit;
     }
+
     .serviceItem {
         margin: 20px 16px;
     }
+
     #servicesSection {
         display: flex;
         flex-direction: column;
     }
+
     #tabBar {
         position: fixed;
         top: 0px;
@@ -62,18 +74,26 @@ body {
         align-items: center;
         background-color: white;
     }
+
     .tabButton {
         font-size: 4rem;
     }
+
+    ul#navBar {
+        height: 200px;
+    }
+
     .row {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     section#projectsSection {
         display: block;
     }
+
 }
 
 @media (max-device-width: 1024px) {
@@ -287,7 +307,6 @@ ul#navbar {
     margin: 0;
     padding: 10px 20px;
     background-color: white;
-    overflow: hidden;
     width: 100%;
     position: fixed;
     top: 0px;

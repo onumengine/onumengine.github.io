@@ -195,7 +195,17 @@ section#pictureDisplaySection img {
     div#imageSelector {
         flex-direction: row;
         min-width: 100%;
-        overflow: hidden;
+    }
+
+    div#imageSelector img {
+        min-width: 900px;
+        margin-right: 10px;
+    }
+
+    div#imageHolder {
+        margin: 0;
+        padding: 0;
+        display: none;
     }
 
     div#pageContent {
@@ -207,11 +217,6 @@ section#pictureDisplaySection img {
     }
 
     div#slotsDiv {
-        padding: 0;
-    }
-
-    div#imageHolder {
-        margin: 0;
         padding: 0;
     }
 

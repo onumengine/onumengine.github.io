@@ -44,8 +44,6 @@ function init() {
     }
 
     homeImage.addEventListener('touchstart', addTouchEventListeners, false);
-
-    //setTimeout(checkWindowResolution, 2000);
 }
 
 function hideAllDropdowns() {
@@ -129,19 +127,19 @@ function moveToPreviousImage() {
     }
 }
 
-// This method displays a border by applying the class 'bordered' to its event target
+// This function displays a border by applying the class 'bordered' to its event target
 function addBorder(event) {
     var selectedImage = event.target;
     selectedImage.classList.add('bordered');
 }
 
-// This method removes a border from an element by removing the class 'bordered' from its event target
+// This function removes a border from an element by removing the class 'bordered' from its event target
 function removeBorder(event) {
     var unselectedImage = event.target;
     unselectedImage.classList.remove('bordered');
 }
 
-// This method removes borders from all selectorImages
+// This function removes borders from all selectorImages
 function removeSelectorBorders() {
     var selectorImages = document.getElementsByClassName("selectableItem");
     for (let image of selectorImages) {
