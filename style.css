@@ -74,6 +74,7 @@ ul {
     align-items: center;
     padding: 24px;
     text-align: center;
+    box-shadow: 0 0 16px 2px #6B7280;
 }
 
 #websiteList {
@@ -93,4 +94,36 @@ ul {
 
 #welcomeText {
    padding: 100px;
+}
+
+@media(max-device-width: 592px)  {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+    }
+
+    .websiteCard {
+        width: 70%;
+        height: 800px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #websiteList {
+        flex-direction: column;
+        margin: auto;
+        position: relative;
+        bottom: 200px;
+    }
+
+    #welcomeBanner {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
