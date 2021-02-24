@@ -35,15 +35,12 @@ body {
     background-color: #F3F4F6;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-}
-
-ul {
-    list-style-type: none;
+footer {
+    background-color: #6B7280;
+    color: #F3F4F6;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 li {
@@ -51,25 +48,25 @@ li {
     padding: 0 16px;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+
 #navbarActions {
     margin: auto 0;
 }
 
-#welcomeBanner {
-    background-color: #6B7280;
-    height: 400px;
-    text-align: center;
-    color: #F9FAFB;
+ul {
+    list-style-type: none;
 }
 
-#welcomeText {
-   padding: 100px;
-}
-
-.websiteItem {
+.websiteCard {
     background-color: white;
     width: 220px;
-    height: 280px;
+    min-height: 280px;
     margin: 0 20px;
     display: flex;
     flex-direction: column;
@@ -85,4 +82,15 @@ li {
     justify-content: center;
     position: relative;
     bottom: 125px;
+}
+
+#welcomeBanner {
+    background-color: #6B7280;
+    height: 400px;
+    text-align: center;
+    color: #F9FAFB;
+}
+
+#welcomeText {
+   padding: 100px;
 }
