@@ -1,0 +1,326 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: medium;
+    font-family: sans-serif;
+    color: #4B5563;
+}
+
+@media (max-device-width: 592px) {
+
+    body {
+        text-align: center;
+        font-size: large;
+    }
+
+    #aboutSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        text-align: start;
+    }
+
+    div#musicplayerProject {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    div.project{
+        display: flex;
+        flex-direction: column;
+        border-top-style: solid;
+        border-top-color: #4B5563;
+        border-top-width: 1px;
+        padding-top: 40px;
+    }
+
+    footer div#contactDiv {
+        text-align: start;
+    }
+
+    footer div#contactDiv button {
+        font-size: inherit;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    p {
+        font-size: inherit;
+    }
+
+    .serviceItem {
+        margin: 20px 16px;
+    }
+
+    #servicesSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tabBar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+    }
+
+    .tabButton {
+        font-size: 4rem;
+    }
+
+    ul#navBar {
+        height: 200px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#projectsSection {
+        display: block;
+    }
+
+}
+
+@media (max-device-width: 1024px) {
+    body {
+        text-align: center;
+        font-size: large;
+    }
+    article {
+        text-align: start;
+    }
+    div#musicplayerProject {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    div.project{
+        display: flex;
+        flex-direction: column;
+        border-top-style: solid;
+        border-top-color: #4B5563;
+        border-top-width: 1px;
+        padding-top: 40px;
+    }
+    footer {
+        margin-top: 200px;
+    }
+    footer div#contactDiv {
+        text-align: start;
+    }
+    footer div#contactDiv button {
+        font-size: inherit;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+    p {
+        font-size: inherit;
+    }
+    #tabBar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    .tabButton {
+        font-size: 4rem;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section#projectsSection {
+        display: block;
+    }
+}
+
+#aboutSection {
+    padding: 0px 40px;
+    padding-bottom: 100px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+article#myProjectsHeading {
+    display: block;
+    margin: 60px 0px;
+}
+
+button.flatButton {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: inherit;
+    color: inherit;
+    padding: 6px 8px;
+    font-size: inherit;
+}
+
+#centeredContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactDiv {
+    padding: 40px;
+}
+
+div.tabContent {
+    position: relative;
+    top: 50px;
+}
+
+div#myIntroDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.projectScreenshots {
+    display: flex;
+    justify-content: center;
+}
+
+div.projectScreenshots img {
+    margin: 0px 20px;
+}
+
+footer {
+    background-color: #D1D5DB;
+    margin-top: 200px;
+}
+
+.gridItem {
+    margin: 20px 40px;
+}
+
+#myProjectsHeading {
+    margin: 40px 0px;
+}
+
+p.flatButton {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 6px 8px;
+}
+
+#paddedBody {
+    padding: 0px 40px
+}
+
+#projectsSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.serviceItem {
+    border-style: none;
+    border-radius: 16px;
+    padding: 0px 16px;
+    margin: 8px 8px;
+    box-shadow: 2px 2px;
+}
+
+#servicesSection {
+    display: flex;
+}
+
+#siteCredits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9CA3AF;
+    text-align: center;
+    color: #F3F4F6;
+}
+
+.socialIcon {
+    padding: 0px 8px;
+}
+
+#socialIcons {
+    display: flex;
+    align-items: center;
+}
+
+.tabButton {
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#tabBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+
+.testing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 1.0;
+    z-index: 1;
+}
+
+ul#navbar li {
+    float: right;
+}
+
+ul#navbar li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: inherit;
+}
