@@ -6,18 +6,19 @@ body {
     font-size: medium;
     font-family: sans-serif;
     color: #4B5563;
+    margin: 0;
 }
 
 @media (max-device-width: 592px) {
 
-    body {
-        text-align: center;
-        font-size: large;
-    }
-
     #aboutSection {
         display: flex;
         flex-direction: column;
+    }
+
+    body {
+        text-align: center;
+        font-size: large;
     }
 
     article {
@@ -168,9 +169,15 @@ article {
     justify-content: center;
 }
 
-#myProjectsHeading {
-    display: block;
-    margin: 60px 0px;
+#centeredContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactDiv {
+    padding: 40px;
 }
 
 .flatButton {
@@ -183,38 +190,6 @@ article {
     font-size: inherit;
 }
 
-#centeredContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#contactDiv {
-    padding: 40px;
-}
-
-.tabContent {
-    position: relative;
-    top: 50px;
-}
-
-#myIntroDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.projectScreenshots {
-    display: flex;
-    justify-content: center;
-}
-
-.projectScreenshots img {
-    margin: 0px 20px;
-}
-
 footer {
     background-color: #D1D5DB;
     margin-top: 200px;
@@ -224,19 +199,52 @@ footer {
     margin: 20px 40px;
 }
 
-#myProjectsHeading {
-    margin: 40px 0px;
+#myIntroDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-p.flatButton {
-    border-style: solid;
-    border-radius: 8px;
-    border-width: 1px;
-    padding: 6px 8px;
+#myProjectsHeading {
+    display: block;
+    margin: 60px 0px;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 1.0;
+    z-index: 1;
+}
+
+#navbar li {
+    float: right;
+}
+
+#navbar li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: inherit;
 }
 
 #paddedBody {
     padding: 0px 40px
+}
+
+.projectScreenshots {
+    display: flex;
+    justify-content: center;
+}
+
+.projectScreenshots img {
+    margin: 0px 20px;
 }
 
 #projectsSection {
@@ -295,32 +303,14 @@ p.flatButton {
     background-color: white;
 }
 
+.tabContent {
+    position: relative;
+    top: 50px;
+}
+
 .testing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px 20px;
-    background-color: white;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    opacity: 1.0;
-    z-index: 1;
-}
-
-#navbar li {
-    float: right;
-}
-
-#navbar li a {
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    color: inherit;
 }
