@@ -24,12 +24,12 @@ body {
         text-align: start;
     }
 
-    div#musicplayerProject {
+    #musicplayerProject {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    div.project{
+    .project{
         display: flex;
         flex-direction: column;
         border-top-style: solid;
@@ -42,7 +42,7 @@ body {
         text-align: start;
     }
 
-    footer div#contactDiv button {
+    footer #contactDiv button {
         font-size: inherit;
     }
 
@@ -79,7 +79,7 @@ body {
         font-size: 4rem;
     }
 
-    ul#navBar {
+    #navBar {
         height: 200px;
     }
 
@@ -90,7 +90,7 @@ body {
         justify-content: center;
     }
 
-    section#projectsSection {
+    #projectsSection {
         display: block;
     }
 
@@ -104,11 +104,11 @@ body {
     article {
         text-align: start;
     }
-    div#musicplayerProject {
+    #musicplayerProject {
         display: flex;
         flex-direction: column-reverse;
     }
-    div.project{
+    .project{
         display: flex;
         flex-direction: column;
         border-top-style: solid;
@@ -151,7 +151,7 @@ body {
         align-items: center;
         justify-content: center;
     }
-    section#projectsSection {
+    #projectsSection {
         display: block;
     }
 }
@@ -168,12 +168,12 @@ article {
     justify-content: center;
 }
 
-article#myProjectsHeading {
+#myProjectsHeading {
     display: block;
     margin: 60px 0px;
 }
 
-button.flatButton {
+.flatButton {
     border-style: solid;
     border-width: 1px;
     border-radius: 8px;
@@ -194,24 +194,24 @@ button.flatButton {
     padding: 40px;
 }
 
-div.tabContent {
+.tabContent {
     position: relative;
     top: 50px;
 }
 
-div#myIntroDiv {
+#myIntroDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-div.projectScreenshots {
+.projectScreenshots {
     display: flex;
     justify-content: center;
 }
 
-div.projectScreenshots img {
+.projectScreenshots img {
     margin: 0px 20px;
 }
 
@@ -302,7 +302,7 @@ p.flatButton {
     align-items: center;
 }
 
-ul#navbar {
+#navbar {
     list-style-type: none;
     margin: 0;
     padding: 10px 20px;
@@ -314,11 +314,11 @@ ul#navbar {
     z-index: 1;
 }
 
-ul#navbar li {
+#navbar li {
     float: right;
 }
 
-ul#navbar li a {
+#navbar li a {
     display: block;
     padding: 8px;
     text-decoration: none;
