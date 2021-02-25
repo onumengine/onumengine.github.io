@@ -13,6 +13,7 @@ function main() {
 }
 
 function showAboutSection() {
+    console.log('you clicked about');
     var aboutSection = document.getElementById("aboutSection");
     var tabContents = document.getElementsByClassName("tabContent");
     for (let i = 0; i < tabContents.length; i++) {
