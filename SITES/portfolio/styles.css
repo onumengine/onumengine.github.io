@@ -16,27 +16,13 @@ body {
         flex-direction: column;
     }
 
-    body {
-        text-align: center;
-        font-size: large;
-    }
-
     article {
         text-align: start;
     }
 
-    #musicplayerProject {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .project{
-        display: flex;
-        flex-direction: column;
-        border-top-style: solid;
-        border-top-color: #4B5563;
-        border-top-width: 1px;
-        padding-top: 40px;
+    body {
+        text-align: center;
+        font-size: large;
     }
 
     footer div#contactDiv {
@@ -51,8 +37,37 @@ body {
         font-size: 7rem;
     }
 
+    #musicplayerProject {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #navBar {
+        height: 200px;
+    }
+
     p {
         font-size: inherit;
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        border-top-style: solid;
+        border-top-color: #4B5563;
+        border-top-width: 1px;
+        padding-top: 40px;
+    }
+
+    #projectsSection {
+        display: block;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .serviceItem {
@@ -80,35 +95,44 @@ body {
         font-size: 4rem;
     }
 
-    #navBar {
-        height: 200px;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #projectsSection {
-        display: block;
-    }
-
 }
 
 @media (max-device-width: 1024px) {
+
+    article {
+        text-align: start;
+    }
+
     body {
         text-align: center;
         font-size: large;
     }
-    article {
+
+    footer {
+        margin-top: 200px;
+    }
+
+    footer div#contactDiv {
         text-align: start;
     }
+
+    footer div#contactDiv button {
+        font-size: inherit;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
     #musicplayerProject {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    p {
+        font-size: inherit;
+    }
+
     .project{
         display: flex;
         flex-direction: column;
@@ -117,21 +141,18 @@ body {
         border-top-width: 1px;
         padding-top: 40px;
     }
-    footer {
-        margin-top: 200px;
+    
+    #projectsSection {
+        display: block;
     }
-    footer div#contactDiv {
-        text-align: start;
+    
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    footer div#contactDiv button {
-        font-size: inherit;
-    }
-    h1 {
-        font-size: 7rem;
-    }
-    p {
-        font-size: inherit;
-    }
+
     #tabBar {
         position: fixed;
         top: 0px;
@@ -143,17 +164,9 @@ body {
         align-items: center;
         background-color: white;
     }
+
     .tabButton {
         font-size: 4rem;
-    }
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    #projectsSection {
-        display: block;
     }
 }
 
