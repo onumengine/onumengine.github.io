@@ -238,7 +238,6 @@ footer {
 }
 
 #navbar {
-    list-style-type: none;
     margin: 0;
     padding: 10px 20px;
     background-color: white;
@@ -249,15 +248,19 @@ footer {
     z-index: 1;
 }
 
-#navbar li {
-    float: right;
-}
-
-#navbar li a {
+#navbar a {
     display: block;
     padding: 8px;
     text-decoration: none;
     color: inherit;
+}
+
+#navbar li {
+    float: right;
+}
+
+#navbar ul {
+    list-style-type: none;
 }
 
 #paddedBody {
