@@ -10,6 +10,9 @@ function main() {
     
     var homeButton = document.getElementById("homeButton");
     homeButton.onclick = showMainPage;
+
+    var resumeButton = document.getElementById("resumeButton");
+    resumeButton.onclick = closeNavbar;
 }
 
 function showAboutSection() {
@@ -59,4 +62,16 @@ function openMainPage() {
 function openTab(clickEvent, tabName) {
     document.getElementById(tabName).style.display = "block";
     clickEvent.currentTarget.className += " active";
+}
+
+function closeNavbar() {
+    console.log('you are trying to close the navbar');
+    var navbar = document.getElementById('navbar');
+    navbar.style.width = '0';
+}
+
+function openNavbar() {
+    console.log('you are trying to open the navbar')
+    var navbar = document.getElementById('navbar');
+    navbar.style.width = '70%';
 }
