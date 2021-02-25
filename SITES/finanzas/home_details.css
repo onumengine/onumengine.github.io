@@ -195,6 +195,7 @@ section#pictureDisplaySection img {
     div#imageSelector {
         flex-direction: row;
         min-width: 100%;
+        overflow: scroll;
     }
 
     div#imageSelector img {
