@@ -238,7 +238,6 @@ footer {
 }
 
 #navbar {
-    margin: 0;
     padding: 10px 20px;
     background-color: white;
     width: 100%;
@@ -255,12 +254,20 @@ footer {
     color: inherit;
 }
 
+#navbar button {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    display: none;
+}
+
 #navbar li {
     float: right;
 }
 
 #navbar ul {
     list-style-type: none;
+    margin: 0;
 }
 
 #paddedBody {
