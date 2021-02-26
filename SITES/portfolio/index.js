@@ -13,6 +13,9 @@ function main() {
 
     var resumeButton = document.getElementById("resumeButton");
     resumeButton.onclick = closeNavbar;
+    
+    var openNavbarButton = document.getElementById('openNavbarButton');
+    openNavbarButton.onclick = openNavbar;
 }
 
 function showAboutSection() {
