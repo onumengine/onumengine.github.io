@@ -84,9 +84,9 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding: 24px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 0 16px 2px #6B7280;
 }
 
