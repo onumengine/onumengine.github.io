@@ -18,12 +18,12 @@ body {
 
     article {
         text-align: start;
+        font-size: 2rem;
     }
 
     body {
         text-align: center;
         font-size: large;
-        padding: 40px;
     }
 
     footer div#contactDiv {
@@ -237,7 +237,10 @@ footer {
 }
 
 .gridItem {
-    margin: 20px 40px;
+    margin: 20px 80px;
+    border-style: none;
+    border-width: 1px;
+    padding: 20px;
 }
 
 #myIntroDiv {
@@ -289,7 +292,7 @@ footer {
 }
 
 #paddedBody {
-    padding: 0px 40px
+    padding: 0px 80px
 }
 
 .projectScreenshots {
