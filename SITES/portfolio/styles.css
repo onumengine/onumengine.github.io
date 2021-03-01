@@ -23,6 +23,7 @@ body {
     body {
         text-align: center;
         font-size: large;
+        padding: 40px;
     }
 
     footer div#contactDiv {
@@ -348,15 +349,6 @@ footer {
     padding-left: 8px;
     padding-right: 8px;
 }
-
-/*
-#tabBar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: white;
-}
-*/
 
 .tabContent {
     position: relative;
