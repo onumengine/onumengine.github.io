@@ -103,20 +103,6 @@ body {
         flex-direction: column;
     }
 
-    /*
-    #tabBar {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: white;
-    }
-    */
-
     .tabButton {
         font-size: 4rem;
     }
@@ -178,20 +164,6 @@ body {
         align-items: center;
         justify-content: center;
     }
-
-    /*
-    #tabBar {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-    }
-    */
 
     .tabButton {
         font-size: 4rem;
