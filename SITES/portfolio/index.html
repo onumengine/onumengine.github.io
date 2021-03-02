@@ -30,107 +30,105 @@
         </nav>
         <div id="mainPage" class="tabContent">
             <hr>
-            <div id="paddedBody">
-                <section class="row">
-                    <div id="myIntroDiv" class="centeredContent">
-                        <div class="testing">
-                            <h1 id="heyThereText">Hey there!<br>I'm Pete.</h1>
-                            <h3 id="iBuildText">I build mobile applications<br>that are fun to use</h3>
-                            <br>
-                            <div id="socialIcons">
-                                <img class="socialIcon" src="icons/github-logo.png" height="40px">
-                                <img class="socialIcon" src="icons/icons8-twitter-48.png">
-                                <img class="socialIcon" src="icons/linkedin.png" height="40px">
-                            </div>
+            <section id="banner" class="row">
+                <div id="myIntroDiv" class="centeredContent">
+                    <div class="testing">
+                        <h1 id="heyThereText">Hey there!<br>I'm Pete.</h1>
+                        <h3 id="iBuildText">I build mobile applications<br>that are fun to use</h3>
+                        <br>
+                        <div id="socialIcons">
+                            <img class="socialIcon" src="icons/github-logo.png" height="40px">
+                            <img class="socialIcon" src="icons/icons8-twitter-48.png">
+                            <img class="socialIcon" src="icons/linkedin.png" height="40px">
                         </div>
                     </div>
-                    <div class="centeredContent">
-                        <img src="images/undraw_feeling_proud_qne1.png" height="400px">
-                    </div>
-                </section>
-                <section class="row">
-                    <article>
-                        <h2>Skills and Portfolio</h2>
+                </div>
+                <div class="centeredContent">
+                    <img src="images/undraw_feeling_proud_qne1.png" height="400px">
+                </div>
+            </section>
+            <section class="row">
+                <article>
+                    <h2>Skills and Portfolio</h2>
+                    <p>
+                        From the early days of building mobile apps with Python's kivy framework to building native
+                        Android apps with Java and Kotlin and cross-platform apps with Flutter, I've picked up these
+                        skills. They come in handy with mobile apps and some of them are even used in building
+                        websites.
+                    </p>
+                    <div>
                         <p>
-                            From the early days of building mobile apps with Python's kivy framework to building native
-                            Android apps with Java and Kotlin and cross-platform apps with Flutter, I've picked up these
-                            skills. They come in handy with mobile apps and some of them are even used in building
-                            websites.
+                            <strong>Mobile applications:</strong> Hybrid(Android and iOS) apps with Flutter | Native Android(Java and Kotlin)
                         </p>
-                        <div>
-                            <p>
-                                <strong>Mobile applications:</strong> Hybrid(Android and iOS) apps with Flutter | Native Android(Java and Kotlin)
-                            </p>
-                            <p>
-                                <strong>Backend:</strong> Django | Firebase
-                            </p>
-                            <p>
-                                <strong>Collaboration:</strong> Git and Github | Gitflow workflow
-                            </p>
-                        </div>
-                    </article>
-                    <div class="introImage">
-                        <img src="images/undraw_hacker_mindset_gjwq.png" height="400px">
+                        <p>
+                            <strong>Backend:</strong> Django | Firebase
+                        </p>
+                        <p>
+                            <strong>Collaboration:</strong> Git and Github | Gitflow workflow
+                        </p>
                     </div>
-                </section>
-                <div>
-                    <article id="myProjectsHeading">
-                        <h2>Projects</h2>
-                        <p>Here are some of the projects I've built:</p>
+                </article>
+                <div class="introImage">
+                    <img src="images/undraw_hacker_mindset_gjwq.png" height="400px">
+                </div>
+            </section>
+            <div>
+                <article id="myProjectsHeading">
+                    <h2>Projects</h2>
+                    <p>Here are some of the projects I've built:</p>
+                </article>
+            </div>
+            <section id="projectsSection">
+                <div class="project row">
+                    <div class="gridItem projectScreenshots">
+                        <img src="images/doctor.svg" height="400px">
+                    </div>
+                    <article id="medizorgArticle" class="gridItem">
+                        <h3>Medizorg</h3>
+                        <p>
+                            Medizorg is an application that leverages the power of AI chatbots to
+                            provide a user with a provisional diagnosis and uses video conferencing
+                            for telemedicine.<br><br>It is being built with Flutter's BLoC architecural
+                            pattern and has features like Video Calling, User Authentication, Device Permission
+                            management and internet connectivity.
+                        </p>
                     </article>
                 </div>
-                <section id="projectsSection">
-                    <div class="project row">
-                        <div class="gridItem projectScreenshots">
-                            <img src="images/doctor.svg" height="400px">
-                        </div>
-                        <article id="medizorgArticle" class="gridItem">
-                            <h3>Medizorg</h3>
-                            <p>
-                                Medizorg is an application that leverages the power of AI chatbots to
-                                provide a user with a provisional diagnosis and uses video conferencing
-                                for telemedicine.<br><br>It is being built with Flutter's BLoC architecural
-                                pattern and has features like Video Calling, User Authentication, Device Permission
-                                management and internet connectivity.
-                            </p>
-                        </article>
+                <div id="musicplayerProject" class="project row">
+                    <article id="musicPlayerArticle" class="gridItem">
+                        <h3>Musicplayer</h3>
+                        <p>
+                            MusicPlayer is a Flutter application that reaches deep into Android
+                            platform APIs through method channels, an amazing feature of Flutter, to read 
+                            and play music files stored on any android device. <br><br>It can
+                            modify files on a device and store data locally.
+                        </p>
+                    </article>
+                    <div class="gridItem projectScreenshots">
+                        <img src="appScreenshots/nowplayingpage.png" height="400px">
+                        <img src="appScreenshots/artistsscreen.png" height="400px">
                     </div>
-                    <div id="musicplayerProject" class="project row">
-                        <article id="musicPlayerArticle" class="gridItem">
-                            <h3>Musicplayer</h3>
-                            <p>
-                                MusicPlayer is a Flutter application that reaches deep into Android
-                                platform APIs through method channels, an amazing feature of Flutter, to read 
-                                and play music files stored on any android device. <br><br>It can
-                                modify files on a device and store data locally.
-                            </p>
-                        </article>
-                        <div class="gridItem projectScreenshots">
-                            <img src="appScreenshots/nowplayingpage.png" height="400px">
-                            <img src="appScreenshots/artistsscreen.png" height="400px">
-                        </div>
+                </div>
+                <div class="project row">
+                    <div class="gridItem projectScreenshots">
+                        <img src="appScreenshots/KT_note_list_activity.png" height="400px">
+                        <img src="appScreenshots/KT_note_activity.png" height="400px">
                     </div>
-                    <div class="project row">
-                        <div class="gridItem projectScreenshots">
-                            <img src="appScreenshots/KT_note_list_activity.png" height="400px">
-                            <img src="appScreenshots/KT_note_activity.png" height="400px">
-                        </div>
-                        <article class="gridItem">
-                            <h3>KTNotes</h3>
-                            <p>
-                                KTNotes is a psychology experiment.
-                                It's a notekeeper app built with a unique color combination
-                                and to support emojis and fancy text.<br><br> These features were integrated to
-                                test how much a simple app can engage a user if its user experience is impressive.
-                                <br><br>
-                                It's a native android application built first with Java and then refactored
-                                to Kotlin. It implements recyclerView, stores notes in a local SQLite database 
-                                and is colorful and fun to use.
-                            </p>
-                        </article>
-                    </div>
-                </section>
-            </div>
+                    <article class="gridItem">
+                        <h3>KTNotes</h3>
+                        <p>
+                            KTNotes is a psychology experiment.
+                            It's a notekeeper app built with a unique color combination
+                            and to support emojis and fancy text.<br><br> These features were integrated to
+                            test how much a simple app can engage a user if its user experience is impressive.
+                            <br><br>
+                            It's a native android application built first with Java and then refactored
+                            to Kotlin. It implements recyclerView, stores notes in a local SQLite database 
+                            and is colorful and fun to use.
+                        </p>
+                    </article>
+                </div>
+            </section>
             <footer>
                 <div id="contactDiv">
                     <h2>Let's Build Together!</h2>

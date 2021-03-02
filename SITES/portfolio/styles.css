@@ -182,8 +182,15 @@ article {
     justify-content: center;
 }
 
-article .gridItem {
+article.gridItem {
     box-shadow: 0px 0px 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#banner {
+    background-color: aqua;
 }
 
 #centeredContent {
@@ -215,7 +222,6 @@ footer {
 .gridItem {
     margin: 20px 80px;
     padding: 20px;
-    border-radius: 3px;
 }
 
 #myIntroDiv {
@@ -267,7 +273,7 @@ footer {
 }
 
 #paddedBody {
-    padding: 0px 80px
+    padding: 0px 0px
 }
 
 .projectScreenshots {
