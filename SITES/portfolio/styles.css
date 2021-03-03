@@ -192,7 +192,8 @@ article.gridItem {
 }
 
 #banner {
-    background-color: aqua;
+    background-color: grey;
+    padding: 100px;
 }
 
 #centeredContent {
