@@ -3,9 +3,10 @@
 }
 
 body {
+    background-color: #E4F9F5;
+    color: #4B5563;
     font-size: medium;
     font-family: sans-serif;
-    color: #4B5563;
     margin: 0;
 }
 
@@ -192,7 +193,7 @@ article.gridItem {
 }
 
 #banner {
-    background-color: grey;
+    background-color: rgb(128, 113, 113);
     padding: 100px;
 }
 
@@ -241,12 +242,13 @@ footer {
 
 #navbar {
     padding: 10px 20px;
-    background-color: white;
+    background-color: inherit;
     width: 100%;
     position: fixed;
     top: 0px;
     opacity: 1.0;
     z-index: 1;
+    filter: grayscale(1.0);
 }
 
 #navbar a {
