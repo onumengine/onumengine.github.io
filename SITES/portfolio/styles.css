@@ -8,6 +8,7 @@ body {
     font-size: medium;
     font-family: sans-serif;
     margin: 0;
+    line-height: 2;
 }
 
 @media (max-device-width: 592px) {
@@ -298,6 +299,7 @@ footer {
 .row {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .serviceItem {
@@ -323,6 +325,10 @@ footer {
 
 #skillsSection {
     padding: 0 80px;
+}
+
+#skillsSection article{
+    padding-right: 200px;
 }
 
 .socialIcon {
