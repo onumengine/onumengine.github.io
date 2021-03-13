@@ -307,7 +307,7 @@ footer {
     border-radius: 16px;
     padding: 0px 16px;
     margin: 8px 8px;
-    box-shadow: 2px 2px;
+    box-shadow: 0 0 8px 2px;
 }
 
 #servicesSection {
