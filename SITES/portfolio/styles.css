@@ -208,6 +208,15 @@ article.gridItem {
 #contactDiv {
     padding: 40px;
 }
+
+#contactFormDiv {
+    margin: 0 40px;
+}
+
+#contactForm * {
+    margin: 8px 0;
+}
+
 .flatButton {
     border-style: solid;
     border-width: 1px;
