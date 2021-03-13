@@ -211,6 +211,7 @@ article.gridItem {
 
 #contactFormDiv {
     margin: 0 40px;
+    display: none;
 }
 
 #contactForm * {
