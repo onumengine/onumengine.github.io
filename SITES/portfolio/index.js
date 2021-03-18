@@ -16,6 +16,9 @@ function main() {
     
     var openNavbarButton = document.getElementById('openNavbarButton');
     openNavbarButton.onclick = openNavbar;
+
+    var hireMeButton = document.querySelector('#hireMeButton');
+    hireMeButton.onclick = showContactForm;
 }
 
 function showAboutSection() {
@@ -35,6 +38,11 @@ function showMainPage() {
         tabContents[i].style.display = "none";
     }
     mainPage.style.display = "block"
+}
+
+function showContactForm() {
+    var contactForm = document.querySelector('#contactFormDiv');
+    contactForm.style.display = block;
 }
 
 function assignHomeButton() {

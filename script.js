@@ -16,6 +16,6 @@ function openNavBar() {
 
 function closeNavbar() {
     var navbar = document.getElementById('navbarActions');
-    console.log(`you trie to close ${navbar}`);
+    console.log(`you tried to close ${navbar}`);
     navbar.style.width = '0';
 }
