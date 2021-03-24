@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 window.onload = main;
 
 function main() {
@@ -21,35 +23,17 @@ function main() {
     hireMeButton.onclick = showContactForm;
 }
 
-function showAboutSection() {
-    console.log('you clicked about');
-    var aboutSection = document.getElementById("aboutSection");
-    var tabContents = document.getElementsByClassName("tabContent");
-    for (let i = 0; i < tabContents.length; i++) {
-        tabContents[i].style.display = "none";
-    }
-    aboutSection.style.display = "block"
-}
-
-function showMainPage() {
-    var mainPage = document.getElementById("mainPage");
-    var tabContents = document.getElementsByClassName("tabContent");
-    for (let i = 0; i < tabContents.length; i++) {
-        tabContents[i].style.display = "none";
-    }
-    mainPage.style.display = "block"
-}
-
-function showContactForm() {
-    var contactForm = document.querySelector('#contactFormDiv');
-    contactForm.style.display = block;
-}
-
 function assignHomeButton() {
     homeButton = document.getElementById("homeButton");
     homeButton.onclick = () => {
         openPage("homeButton");
-    }
+    };
+}
+
+function closeNavbar() {
+    console.log('you are trying to close the navbar');
+    var navbar = document.getElementById('navbar');
+    navbar.style.width = '0';
 }
 
 function deactivateTabItems() {
@@ -75,14 +59,32 @@ function openTab(clickEvent, tabName) {
     clickEvent.currentTarget.className += " active";
 }
 
-function closeNavbar() {
-    console.log('you are trying to close the navbar');
-    var navbar = document.getElementById('navbar');
-    navbar.style.width = '0';
-}
-
 function openNavbar() {
-    console.log('you are trying to open the navbar')
+    console.log('you are trying to open the navbar');
     var navbar = document.getElementById('navbar');
     navbar.style.width = '70%';
+}
+
+function showAboutSection() {
+    console.log('you clicked about');
+    var aboutSection = document.getElementById("aboutSection");
+    var tabContents = document.getElementsByClassName("tabContent");
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+    }
+    aboutSection.style.display = "block";
+}
+
+function showContactForm() {
+    var contactForm = document.querySelector('#contactFormDiv');
+    contactForm.style.display = block;
+}
+
+function showMainPage() {
+    var mainPage = document.getElementById("mainPage");
+    var tabContents = document.getElementsByClassName("tabContent");
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+    }
+    mainPage.style.display = "block";
 }
